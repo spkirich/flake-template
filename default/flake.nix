@@ -14,6 +14,12 @@
 
       in
       {
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            # No build inputs yet.
+          ];
+        };
+
         formatter = pkgs.nixpkgs-fmt;
       }
     );
